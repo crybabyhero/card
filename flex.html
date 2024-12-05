@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #2c3e50;
+            padding: 30px 20px;
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Foto profil */
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 4px solid white;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            width: 100%;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+            display: block;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #34495e;
+        }
+
+        .content {
+            width: 80%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .content section {
+            margin-bottom: 40px;
+        }
+
+        .content h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #2c3e50;
+            position: relative;
+        }
+
+        .content h2::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background-color: #2c3e50;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            border-radius: 2px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .content ul {
+            list-style-type: none;
+        }
+
+        .content ul li {
+            margin-bottom: 10px;
+        }
+
+        .content ul li a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+
+        .content ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .content {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile-photo">
+                <img src="download.jpeg" alt="Profile Photo">
+            </div>
+            <ul>
+                <li><a href="#name">Nama</a></li>
+                <li><a href="#university">Universitas</a></li>
+                <li><a href="#social-media">Sosial Media</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <section id="name">
+                <h2>Nama</h2>
+                <p>Nama lengkap saya adalah <strong>John Doe</strong>. Saya adalah seorang desainer UI/UX dan pengembang web yang berpengalaman dalam membangun situs dan aplikasi yang responsif dan user-friendly.</p>
+            </section>
+            <section id="university">
+                <h2>Universitas</h2>
+                <ul>
+                    <li> <strong>Universitas Ahmad Dahlan</strong> - 2020</li>
+                    <li> <strong>Universitas Brawijaya</strong> - 2017</li>
+                    <li> <strong>Universitas Indonesia</strong> - 2014</li>
+                </ul>
+            </section>
+            <section id="social-media">
+                <h2>Sosial Media</h2>
+                <ul>
+                    <li><a href="https://twitter.com" >Twitter</a> - @john_doe</li>
+                    <li><a href="https://linkedin.com">LinkedIn</a> - John Doe</li>
+                    <li><a href="https://github.com">GitHub</a> - johndoe123</li>
+                    <li><a href=hal.html>Instagram</a> - @johndoe</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+>
+</body>
+</html>
