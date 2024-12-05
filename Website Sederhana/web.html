@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #007BFF;
+        }
+
+        .hero {
+            background-image: url("1231.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            height: 200px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .carrers {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            gap: 30px;
+        }
+
+        .carrers-item {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .carrers-item h3 {
+            margin-bottom: 15px;
+            color: #007BFF;
+        }
+
+        .carrers-item p {
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+        .carrers-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #007BFF;
+            margin-top: 10px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+        }
+
+        .about {
+            padding: 50px 20px;
+            display: flex;
+            gap: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-content {
+            max-width: 600px;
+        }
+
+        .about-content h2 {
+            margin-bottom: 10px;
+            color: #007BFF;
+        }
+
+        .about-content-carrers h2 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+        }
+
+        .career {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .career li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .career li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #007BFF;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portolio">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Hai, I am your Kitsune</h1>
+        <p>Design Website, Mobile, Desktop And Mobile Web Developer</p>
+    </section>
+
+    <section class="about">
+        <img src="download.jpeg" alt="Profile">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Halo semuanya, perkenalkan nama saya Kitsune seorang designer website, mobile, desktop dan mobile web developer. yang sudah memiliki beberapa portolio sebelumnya dan pengalaman kerja sebelumnya.</p>
+            <h3>Career Milestones:</h3>
+            <ul class="career">
+                <li>2020 - 2021: Graphic Designer</li>
+                <li>2021 - 2022: UI Designer</li>
+                <li>2022 - 2023: Mobile Developer</li>
+                <li>2023 - Present: Web Developer</li>
+            </ul>
+        </div>
+    </section>
+
+     <div>
+        <div class="about-content-carrers">
+            <h2>Kerja Saya</h2>
+        </div>
+        <section class="carrers">
+            <div class="carrers-item">
+                <img src="porto.png" alt="Jasa Suruh App">
+                <h3>Jasa Suruh</h3>
+                <p>Aplikasi inovatif yang menyediakan platform untuk menemukan pekerjaan dan layanan secara efisien. Dibangun dengan desain modern dan pengalaman pengguna yang optimal.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+            <div class="carrers-item">
+                <img src="porto.png" alt="EduTrack App">
+                <h3>EduTrack</h3>
+                <p>Platform pendidikan yang membantu pelajar melacak kemajuan belajar mereka dengan fitur analitik dan saran pembelajaran yang terpersonalisasi.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+            <div class="carrers-item">
+                <img src="porto.png" alt="ShopEase App">
+                <h3>ShopEase</h3>
+                <p>Marketplace yang mengutamakan pengalaman belanja nyaman dengan pencarian barang cepat, checkout aman, dan desain user-friendly.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+            <div class="carrers-item">
+                <img src="porto.png" alt="HealthHub App">
+                <h3>HealthHub</h3>
+                <p>Aplikasi kesehatan multifungsi yang mempermudah akses konsultasi dokter, catatan medis, dan tips kesehatan harian.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+            <div class="carrers-item">
+                <img src="porto.png" alt="TravelMate App">
+                <h3>TravelMate</h3>
+                <p>Pendamping perjalanan yang memberikan informasi destinasi, panduan wisata, dan pengaturan jadwal secara mudah.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+            <div class="carrers-item">
+                <img src="porto.png" alt="EcoSave App">
+                <h3>EcoSave</h3>
+                <p>Solusi digital untuk membantu pengguna menjalani gaya hidup ramah lingkungan melalui saran aktivitas hijau dan kalkulator jejak karbon.</p>
+                <a class="btn" href="https://dribbble.com/shots/24743625-Jasa-Suruh-Mobile-App">Lihat Selengkapnya</a>
+            </div>
+        </section>
+     </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Kitsune. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
